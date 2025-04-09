@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+  }
+  .card {
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(135deg, #4A90E2, #9013FE);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bank{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .card-bank, .card-type {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .type{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .logo_type{
+    width: 50px;
+    height: 20px;
+  }
+  .logo_bank{
+    width: 30px;
+    height: 30px;
+  }
+  .card-number {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .card-holder {
+    font-size: 16px;
+  }
+  .card-expiration {
+    font-size: 16px;
+    text-align: right;
+  }
+  table {
+    margin-top: 40px;
+    margin-left: 5%;
+    width: 90%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  .submit-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .submit-btn:hover {
+    background-color: #45a049;
+  }

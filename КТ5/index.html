@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Форма банковской карты</title>
+</head>
+<body>
+
+<div class="container">
+  <form class="form" id="cardForm">
+    <input type="text" id="bank" placeholder="Название банка" required>
+    <select id="type" name="type_card" required>
+        <option value="VISA">VISA</option>
+        <option value="MasterCard">MasterCard</option>
+        <option value="МИР">Мир</option>
+    </select>
+    <input type="text" id="number" placeholder="Номер карты (16 цифр)" maxlength="16" required>
+    <input type="text" id="holder" placeholder="Имя держателя карты" required>
+    <input type="text" id="expiration" placeholder="ММ/ГГ" required>
+    <button type="submit" class="submit-btn">Добавить карту</button>
+  </form>
+
+  <div class="card" id="cardPreview">
+    <div class="bank">
+        <div class="card-bank" id="previewBank">Банк</div>
+        <img id="img_bank" class="logo_bank" src="#" alt="лого" >
+    </div>
+    <div class="type">
+        <div class="card-type" id="previewType">Тип</div>
+        <img id="img_type" class="logo_type" src="#" alt="лого" >
+    </div>
+    <div class="card-number" id="previewNumber">0000 0000 0000 0000</div>
+    <div class="card-holder" id="previewHolder">Имя держателя</div>
+    <div class="card-expiration" id="previewExpiration">ММ/ГГ</div>
+  </div>
+</div>
+
+<table id="cardsTable">
+  <thead>
+    <tr>
+      <th>Банк</th>
+      <th>Тип</th>
+      <th>Номер карты</th>
+      <th>Держатель</th>
+      <th>Срок действия</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
